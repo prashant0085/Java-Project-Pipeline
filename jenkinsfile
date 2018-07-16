@@ -14,8 +14,8 @@ pipeline {
 		}
 	}
 	post{
-		success{
-			archiveArtifacts Artifacts: 'dist/*.jar', fingerprint: true
+		Success{
+			archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
 		}
 	}
 }
