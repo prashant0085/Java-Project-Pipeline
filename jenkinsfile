@@ -2,12 +2,12 @@ pipeline {
 	agent any
 	
 	stages{
-		stage(Test){
+		stage('Test'){
 			steps{
 				echo "This is Test stage of my CICD pipeline"
 			}
 		}
-		stage(Build){
+		stage('Build'){
 			steps{
 				sh 'ant -f build.xml -v'
 			}
