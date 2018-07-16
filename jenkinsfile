@@ -1,0 +1,21 @@
+Pipeline {
+	Agent any
+	
+	stages{
+		stage(Test){
+			steps{
+				echo "This is Test stage of my CICD pipeline"
+			}
+		}
+		stage(Build){
+			steps{
+				sh 'ant -f build.xml -v'
+			}
+		}
+	}
+	Post{
+		Success{
+			archiveArtifacts Artifacts: 'dist/*.jar', fingerprint: true
+		}
+	}
+}
