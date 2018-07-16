@@ -1,5 +1,5 @@
 Pipeline {
-	Agent any
+	agent any
 	
 	stages{
 		stage(Test){
