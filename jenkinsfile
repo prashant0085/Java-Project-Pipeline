@@ -10,7 +10,7 @@ pipeline {
 		stage('Build'){
 			steps{
 				sh 'echo "Hello Guyzz"'
-				sh '${ANT_HOME}/bin/ant -f build.xml -v'
+				sh 'ant -f build.xml -v'
 			}
 		}
 	}
