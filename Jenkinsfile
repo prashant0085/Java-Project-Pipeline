@@ -13,6 +13,11 @@ pipeline {
 				sh 'ant -f build.xml -v'
 			}
 		}
+		stage('deploy'){
+			steps{
+				sh 'cp /home/xsscorp/Desktop/My-CICD-Pipeline---Java/dist/*.jar /var/www/html/project'	
+				}
+			}
 	}
 	post{
 		success{
