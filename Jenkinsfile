@@ -15,7 +15,7 @@ pipeline {
 		}
 		stage('deploy'){
 			steps{
-				sh 'sudo cp /home/xsscorp/Desktop/My-CICD-Pipeline---Java/dist/*.jar /var/www/html/project'	
+				sh 'sudo cp /home/user/Desktop/My-CICD-Pipeline---Java/dist/*.jar /var/www/html/project'	
 				}
 			}
 	}
