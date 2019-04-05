@@ -14,7 +14,7 @@ pipeline {
 		}
 		stage('deploy'){
 			steps{
-				sh 'sudo cp /home/user/Desktop/My-CICD-Pipeline---Java/dist/addition.jar /var/www/html/project/'	
+				sh 'sudo cp /var/lib/jenkins/workspace/test/dist/addition.jar /var/www/html/project/'	
 				}
 			}
 	}
